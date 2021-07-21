@@ -9,8 +9,10 @@ sudo apt-get install -y \
     unzip \
     tree \
     vim \
-    && apt-get clean
+    build-essential
+
 # サイズをへらす
+sudo apt-get clean
 
 # タイムゾーン設定
 sudo ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \

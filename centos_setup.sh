@@ -9,9 +9,14 @@ sudo yum -y install \
     git \
     unzip \
     tree \
-    vim \
-    && yum clean all
+    vim
+
+# vimビルドのためbuild系
+sudo yum groupinstall "Development tools"
+
 # サイズをへらす
+sudo yum clean all
+
 
 #タイムゾーン
 sudo timedatectl set-timezone Asia/Tokyo
