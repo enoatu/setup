@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# sudo apt-get update && sudo apt-get install -y git
+# sudo apt-get update -y && sudo apt-get install -y git
+
+git clone https://github.com/enoatu/setup
+git clone https://github.com/enoatu/dotfiles
+
 sudo apt-get install -y \
     zsh \
     unzip \

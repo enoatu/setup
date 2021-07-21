@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
-# sudo yum update && sudo yum install -y git
-sudo yum install -y
+# sudo yum update -y && sudo yum install -y git
+
+git clone https://github.com/enoatu/setup
+git clone https://github.com/enoatu/dotfiles
+
+sudo yum -y install
     zsh \
     git \
     unzip \
