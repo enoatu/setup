@@ -10,7 +10,7 @@ sudo apt-get install -y \
     vim \
     build-essential \
     zsh \
-    && chsh -s /bin/zsh `whoami`
+    && sudo chsh -s /bin/zsh `whoami`
 
 # サイズをへらす
 sudo apt-get clean

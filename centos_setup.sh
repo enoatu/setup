@@ -11,7 +11,7 @@ sudo yum -y install \
     vim \
     zsh \
     util-linux-user \
-    && chsh -s /bin/zsh `whoami`
+    && sudo chsh -s /bin/zsh `whoami`
 
 # vimビルドのためbuild系
 sudo yum -y groupinstall "Development tools"
