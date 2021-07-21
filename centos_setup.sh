@@ -12,7 +12,7 @@ sudo yum -y install \
     vim
 
 # vimビルドのためbuild系
-sudo yum groupinstall "Development tools"
+sudo yum -y groupinstall "Development tools"
 
 # サイズをへらす
 sudo yum clean all
