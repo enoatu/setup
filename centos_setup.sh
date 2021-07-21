@@ -4,11 +4,13 @@
 sudo yum update -y && sudo yum install -y git && rm -rf setup && git clone https://github.com/enoatu/setup && ./setup/centos_setup.sh
 COMMENTOUT
 
+# util-linux-user はchshを入れるため
 sudo yum -y install \
     unzip \
     tree \
     vim \
     zsh \
+    util-linux-user \
     && chsh -s /bin/zsh `whoami`
 
 # vimビルドのためbuild系
