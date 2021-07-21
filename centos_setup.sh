@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
 
-# sudo yum update -y && sudo yum install -y git
+# sudo yum update -y && sudo yum install -y git && git clone https://github.com/enoatu/setup && ./setup/centos_setup.sh
 
-git clone https://github.com/enoatu/setup
-git clone https://github.com/enoatu/dotfiles
-
-sudo yum -y install
+sudo yum -y install \
     zsh \
     git \
     unzip \
@@ -19,3 +16,8 @@ sudo timedatectl set-timezone Asia/Tokyo
 
 # 文字コードをUTF-8
 sudo localectl set-locale LANG=ja_JP.utf8
+
+# 設定
+cd
+git clone https://github.com/enoatu/dotfiles
+./dotfiles/install.sh
