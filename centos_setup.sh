@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-sudo yum update
-sudo yum install -y \
+# sudo yum update && sudo yum install -y git
+sudo yum install -y
     zsh \
     git \
     unzip \
