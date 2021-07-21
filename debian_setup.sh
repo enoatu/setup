@@ -5,11 +5,12 @@ sudo apt-get update -y && sudo apt-get install -y git && rm -rf setup && git clo
 COMMENTOUT
 
 sudo apt-get install -y \
-    zsh \
     unzip \
     tree \
     vim \
-    build-essential
+    build-essential \
+    zsh \
+    && chsh -s /bin/zsh `whoami`
 
 # サイズをへらす
 sudo apt-get clean
@@ -22,3 +23,8 @@ sudo ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \
 cd
 git clone https://github.com/enoatu/dotfiles
 ./dotfiles/install.sh
+
+# zshで入りなおす
+<< COMMENTOUT
+exec $SHELL -l
+COMMENTOUT

@@ -5,11 +5,11 @@ sudo yum update -y && sudo yum install -y git && rm -rf setup && git clone https
 COMMENTOUT
 
 sudo yum -y install \
-    zsh \
-    git \
     unzip \
     tree \
-    vim
+    vim \
+    zsh \
+    && chsh -s /bin/zsh `whoami`
 
 # vimビルドのためbuild系
 sudo yum -y groupinstall "Development tools"
@@ -28,3 +28,8 @@ sudo localectl set-locale LANG=ja_JP.utf8
 cd
 git clone https://github.com/enoatu/dotfiles
 ./dotfiles/install.sh
+
+# zshで入りなおす
+<< COMMENTOUT
+exec $SHELL -l
+COMMENTOUT
