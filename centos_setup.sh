@@ -10,8 +10,8 @@ sudo yum -y install \
     unzip \
     tree \
     vim \
-# サイズをへらす
     && yum clean all
+# サイズをへらす
 
 #タイムゾーン
 sudo timedatectl set-timezone Asia/Tokyo

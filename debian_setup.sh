@@ -10,6 +10,7 @@ sudo apt-get install -y \
     tree \
     vim \
     && apt-get clean
+# サイズをへらす
 
 # タイムゾーン設定
 sudo ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \
