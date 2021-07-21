@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-# sudo yum update -y && sudo yum install -y git && git clone https://github.com/enoatu/setup && ./setup/centos_setup.sh
+<< COMMENTOUT
+sudo yum update -y && sudo yum install -y git && rm -rf setup && git clone https://github.com/enoatu/setup && ./setup/centos_setup.sh
+COMMENTOUT
 
 sudo yum -y install \
     zsh \

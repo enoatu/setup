@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-# sudo apt-get update -y && sudo apt-get install -y git && git clone https://github.com/enoatu/setup && ./setup/debian_setup.sh
+
+<< COMMENTOUT
+sudo apt-get update -y && sudo apt-get install -y git && rm -rf setup && git clone https://github.com/enoatu/setup && ./setup/debian_setup.sh
+COMMENTOUT
 
 sudo apt-get install -y \
     zsh \
