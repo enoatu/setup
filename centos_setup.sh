@@ -19,7 +19,6 @@ sudo yum -y groupinstall "Development tools"
 # サイズをへらす
 sudo yum clean all
 
-
 #タイムゾーン
 sudo timedatectl set-timezone Asia/Tokyo
 

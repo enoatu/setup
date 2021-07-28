@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 << COMMENTOUT
-sudo apt-get update -y && sudo apt-get install -y git && rm -rf setup && git clone https://github.com/enoatu/setup && ./setup/debian_setup.sh
+sudo apt update -y && sudo apt install -y git && git clone https://github.com/enoatu/setup; ./setup/debian_setup.sh
 COMMENTOUT
 
 sudo apt-get install -y \
@@ -13,7 +13,7 @@ sudo apt-get install -y \
     && sudo chsh -s /bin/zsh `whoami`
 
 # サイズをへらす
-sudo apt-get clean
+sudo apt clean
 
 # タイムゾーン設定
 sudo ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \
