@@ -28,3 +28,8 @@ git clone https://github.com/enoatu/dotfiles
 << COMMENTOUT
 exec $SHELL -l
 COMMENTOUT
+
+# GCE だと chsh 失敗するのでデフォルトシェル設定できない
+<< COMMENTOUT
+zsh
+COMMENTOUT
