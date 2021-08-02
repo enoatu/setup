@@ -9,6 +9,7 @@ sudo yum -y install \
     unzip \
     tree \
     vim \
+    tmux \
     zsh \
     util-linux-user \
     && sudo chsh -s /bin/zsh `whoami`

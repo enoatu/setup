@@ -8,6 +8,7 @@ sudo apt-get install -y \
     unzip \
     tree \
     vim \
+    tmux \
     build-essential \
     zsh \
     && sudo chsh -s /bin/zsh $USER
